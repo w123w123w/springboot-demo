@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wulianfa.springbootdemo.mapper.UserMapper">
+
+    <resultMap id="User" type="com.wulianfa.springbootdemo.entity.User">
+        <id property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="password" column="PASSWORD"/>
+    </resultMap>
+
+    <select id="findUser" resultMap="User">
+    select * from t_user where name=#{name} and password=#{password} ;
+    </select>
+
+</mapper>
