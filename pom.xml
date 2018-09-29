@@ -50,6 +50,7 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!--druid数据源依赖-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
