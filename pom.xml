@@ -57,6 +57,13 @@
             <version>1.0.29</version>
         </dependency>
 
+        <!--将jsp文件转化为字节码文件-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
